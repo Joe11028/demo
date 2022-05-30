@@ -23,6 +23,8 @@ export default function SignInSide() {
       account: data.get('account'),
       password: data.get('password'),
     });
+    // adding a login check before jumping to the dest. page.
+    navigate('/welcome/');
   };
 
   return (
@@ -84,9 +86,6 @@ export default function SignInSide() {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
-                onClick={() => {
-                  navigate("/welcome/");
-                }}
               >
                 Sign in
               </Button>
