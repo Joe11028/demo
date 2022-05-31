@@ -37,7 +37,7 @@ const mdTheme = createTheme();
 
 function DashboardContent() {
   let navigate = useNavigate();
-
+  
   return (
     <ThemeProvider theme={mdTheme}>
       <Box sx={{ display: 'flex' }}>
