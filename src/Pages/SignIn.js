@@ -11,7 +11,6 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import Copyright from '../Components/CopyRight';
-// import Test from './test';
 
 const theme = createTheme();
 
@@ -25,7 +24,7 @@ export default function SignInSide() {
       password: data.get('password'),
     });
     // adding a login check before jumping to the dest. page.
-    navigate('/test');
+    navigate('/welcome/');
   };
 
   return (
